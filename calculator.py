@@ -19,7 +19,7 @@ class Calculator:
 #print(calculator.multiply())
 #print(calculator.divide())
 
-def _demo() -> None:
+def _demo() -> None:  # pragma: no cover
     calc = Calculator(10, 0)
     print("sum:", calc.sum())
     print("subtract:", calc.subtract())
