@@ -1,12 +1,12 @@
 class Calculator:
-    def __init__(self, op1: float, op2: float):
+    def __init__(self, op1: float, op2: float) -> None:
        self.op1 = op1
        self.op2 = op2
-    def sum(self):
+    def sum(self) -> float:
         return self.op1 + self.op2
-    def subtract(self):
+    def subtract(self) -> float:
         return self.op1 - self.op2
-    def multiply(self):
+    def multiply(self) -> float:
         return self.op1 * self.op2
     def divide(self) -> float:
         if self.op2 == 0:
@@ -29,6 +29,6 @@ def _demo() -> None:  # pragma: no cover
     except ZeroDivisionError as e:
         print("divide raised:", e)
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     _demo()
 
